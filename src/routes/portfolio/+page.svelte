@@ -20,8 +20,8 @@
 </script>
 
 <svelte:head>
-  <title>Portfolio - Your Name</title>
-  <meta name="description" content="Portfolio of projects by Your Name - Developer and Designer" />
+  <title>Portfolio - Pradana Yahya</title>
+  <meta name="description" content="Portfolio of projects by Pradana Yahya - Machine Learning and Data Science" />
 </svelte:head>
 
 <div class="max-w-6xl mx-auto px-4 py-12">
