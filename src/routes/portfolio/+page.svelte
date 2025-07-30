@@ -49,7 +49,7 @@
           class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-medium transition-all duration-200 border text-xs sm:text-sm
                  {selectedCategory === category.id
                    ? 'bg-gray-800 text-white dark:bg-gray-200 dark:text-gray-900 border-gray-800 dark:border-gray-200 shadow-lg'
-                   : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700'
+                   : 'bg-white dark:bg-[#272930] text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700'
                  }"
         >
           {category.label}
@@ -86,7 +86,7 @@
       </div>
     {:else}
       <div class="text-center py-16">
-        <div class="w-24 h-24 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div class="w-24 h-24 bg-gray-100 dark:bg-[#212328] rounded-full flex items-center justify-center mx-auto mb-6">
           <Filter class="w-12 h-12 text-gray-400 dark:text-gray-600" />
         </div>
         <p class="text-xl text-gray-600 dark:text-gray-400 mb-4">

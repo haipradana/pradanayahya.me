@@ -5,7 +5,7 @@
   export let project: Project;
 </script>
 
-<div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:shadow-gray-900/20 border border-gray-200 dark:border-gray-700 overflow-hidden group hover:shadow-xl dark:hover:shadow-gray-900/30 transition-all duration-300">
+<div class="bg-white dark:bg-[#272930] rounded-lg shadow-lg dark:shadow-gray-900/20 border border-gray-200 dark:border-gray-700 overflow-hidden group hover:shadow-xl dark:hover:shadow-gray-900/30 transition-all duration-300">
   <div class="relative overflow-hidden">
     <img
       src={project.image}
@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
+    <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
       {project.description}
     </p>
 
