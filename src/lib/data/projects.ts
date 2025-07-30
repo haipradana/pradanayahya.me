@@ -4,7 +4,13 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
-  category: 'llm' | 'computer-vision' | 'web-dev' | 'mobile' | 'data-science' | 'all';
+  category:
+    | "llm"
+    | "computer-vision"
+    | "web-dev"
+    | "mobile"
+    | "data-science"
+    | "all";
   demoUrl?: string;
   githubUrl?: string;
   year: number;
@@ -13,81 +19,113 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: '1',
-    title: 'AI Chat Assistant',
-    description: 'Intelligent chatbot using GPT API with custom training data for specific domains.',
-    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600',
-    tags: ['Python', 'OpenAI', 'FastAPI', 'React'],
-    category: 'llm',
-    demoUrl: 'https://demo.example.com',
-    githubUrl: 'https://github.com/username/ai-chat',
+    id: "1",
+    title: "ChatMyDocs",
+    description:
+      "RAG-based assistant that uses ModernBERT for semantic retrieval. Upload your PDFs and get precise, citation-backed answers.",
+    image:
+      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/chatmydocs/modernbert.jpg",
+    tags: ["RAG", "Python", "ModernBERT"],
+    category: "llm",
+    demoUrl: "https://github.com/haipradana/ChatMyDocs",
+    githubUrl: "https://github.com/haipradana/ChatMyDocs",
+    year: 2025,
+    slug: "chatmydocs",
+  },
+  {
+    id: "2",
+    title: "Object Detection System",
+    description:
+      "Real-time object detection using YOLO v8 for security and monitoring applications.",
+    image:
+      "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=600",
+    tags: ["Python", "YOLO", "OpenCV", "Flask"],
+    category: "computer-vision",
+    githubUrl: "https://github.com/username/object-detection",
     year: 2024,
-    slug: 'ai-chat-assistant'
+    slug: "object-detection-system",
   },
   {
-    id: '2',
-    title: 'Object Detection System',
-    description: 'Real-time object detection using YOLO v8 for security and monitoring applications.',
-    image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=600',
-    tags: ['Python', 'YOLO', 'OpenCV', 'Flask'],
-    category: 'computer-vision',
-    githubUrl: 'https://github.com/username/object-detection',
-    year: 2024,
-    slug: 'object-detection-system'
-  },
-  {
-    id: '3',
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with modern UI/UX and payment gateway integration.',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-    tags: ['SvelteKit', 'PostgreSQL', 'Stripe', 'Tailwind'],
-    category: 'web-dev',
-    demoUrl: 'https://ecommerce-demo.example.com',
-    githubUrl: 'https://github.com/username/ecommerce',
+    id: "3",
+    title: "E-Commerce Platform",
+    description:
+      "Full-stack e-commerce solution with modern UI/UX and payment gateway integration.",
+    image:
+      "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
+    tags: ["SvelteKit", "PostgreSQL", "Stripe", "Tailwind"],
+    category: "web-dev",
+    demoUrl: "https://ecommerce-demo.example.com",
+    githubUrl: "https://github.com/username/ecommerce",
     year: 2023,
-    slug: 'ecommerce-platform'
+    slug: "ecommerce-platform",
   },
   {
-    id: '4',
-    title: 'Face Recognition Attendance',
-    description: 'Attendance system using face recognition with liveness detection.',
-    image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=600',
-    tags: ['Python', 'dlib', 'PostgreSQL', 'Streamlit'],
-    category: 'computer-vision',
-    githubUrl: 'https://github.com/username/face-attendance',
+    id: "4",
+    title: "Face Recognition Attendance",
+    description:
+      "Attendance system using face recognition with liveness detection.",
+    image:
+      "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=600",
+    tags: ["Python", "dlib", "PostgreSQL", "Streamlit"],
+    category: "computer-vision",
+    githubUrl: "https://github.com/username/face-attendance",
     year: 2023,
-    slug: 'face-recognition-attendance'
+    slug: "face-recognition-attendance",
   },
   {
-    id: '5',
-    title: 'Data Analytics Dashboard',
-    description: 'Interactive dashboard for business intelligence with real-time updates.',
-    image: 'https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600',
-    tags: ['Python', 'Plotly', 'Pandas', 'Streamlit'],
-    category: 'data-science',
-    demoUrl: 'https://analytics-demo.example.com',
-    githubUrl: 'https://github.com/username/analytics-dashboard',
+    id: "5",
+    title: "Data Analytics Dashboard",
+    description:
+      "Interactive dashboard for business intelligence with real-time updates.",
+    image:
+      "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600",
+    tags: ["Python", "Plotly", "Pandas", "Streamlit"],
+    category: "data-science",
+    demoUrl: "https://analytics-demo.example.com",
+    githubUrl: "https://github.com/username/analytics-dashboard",
     year: 2022,
-    slug: 'data-analytics-dashboard'
+    slug: "data-analytics-dashboard",
   },
   {
-    id: '6',
-    title: 'Mobile Task Manager',
-    description: 'Cross-platform mobile app for task management with offline sync.',
-    image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600',
-    tags: ['React Native', 'Firebase', 'Redux', 'TypeScript'],
-    category: 'mobile',
-    githubUrl: 'https://github.com/username/task-manager',
+    id: "6",
+    title: "Mobile Task Manager",
+    description:
+      "Cross-platform mobile app for task management with offline sync.",
+    image:
+      "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600",
+    tags: ["React Native", "Firebase", "Redux", "TypeScript"],
+    category: "mobile",
+    githubUrl: "https://github.com/username/task-manager",
     year: 2023,
-    slug: 'mobile-task-manager'
-  }
+    slug: "mobile-task-manager",
+  },
 ];
 
 export const categories = [
-  { id: 'all', label: 'All Projects', count: projects.length },
-  { id: 'llm', label: 'LLM & AI', count: projects.filter(p => p.category === 'llm').length },
-  { id: 'computer-vision', label: 'Computer Vision', count: projects.filter(p => p.category === 'computer-vision').length },
-  { id: 'web-dev', label: 'Web Development', count: projects.filter(p => p.category === 'web-dev').length },
-  { id: 'data-science', label: 'Data Science', count: projects.filter(p => p.category === 'data-science').length },
-  { id: 'mobile', label: 'Mobile Apps', count: projects.filter(p => p.category === 'mobile').length }
+  { id: "all", label: "All Projects", count: projects.length },
+  {
+    id: "llm",
+    label: "LLM & AI",
+    count: projects.filter((p) => p.category === "llm").length,
+  },
+  {
+    id: "computer-vision",
+    label: "Computer Vision",
+    count: projects.filter((p) => p.category === "computer-vision").length,
+  },
+  {
+    id: "web-dev",
+    label: "Web Development",
+    count: projects.filter((p) => p.category === "web-dev").length,
+  },
+  {
+    id: "data-science",
+    label: "Data Science",
+    count: projects.filter((p) => p.category === "data-science").length,
+  },
+  {
+    id: "mobile",
+    label: "Mobile Apps",
+    count: projects.filter((p) => p.category === "mobile").length,
+  },
 ];
