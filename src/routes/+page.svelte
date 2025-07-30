@@ -79,15 +79,15 @@
     </h1>
     
     <div class="space-y-6 lg:space-y-8">
-      <p class="text-[14px] lg:text-base text-gray-600 dark:text-gray-300 leading-loose font-normal">
+      <p class="text-[14px] lg:text-base text-gray-900 dark:text-gray-300 leading-loose font-normal">
         I am Pradana Yahya Abdillah, a bachelor student in Information Technology UGM.
       </p>
       
-      <p class="text-[14px] lg:text-base text-gray-600 dark:text-gray-400 leading-loose font-normal">
+      <p class="text-[14px] lg:text-base text-gray-700 dark:text-gray-400 leading-loose font-normal">
         Grow with a strong passion for everything in data-driven. I'm deeply interested by the world of machine learning, deep learning, and how we can extract meaningful insights from data. Lately, I've been actively exploring various area in AI, such as Natural Language Processing (NLP), Large Languae Models (LLMs), and Computer Vision. 
       </p>
       
-      <p class="text-[14px] lg:text-base text-gray-600 dark:text-gray-400 leading-loose font-normal">
+      <p class="text-[14px] lg:text-base text-gray-700 dark:text-gray-400 leading-loose font-normal">
         I enjoy working on personal projects to experiment with new ideas, tool, and frameworks You can check out some of the projects I've built on my
         <a href="/portfolio" class="text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 underline transition-colors font-medium">
           portfolio here
@@ -95,7 +95,7 @@
         I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.
       </p>
       
-      <p class="text-[15px] lg:text-base text-gray-600 dark:text-gray-400 leading-loose font-normal">
+      <p class="text-[15px] lg:text-base text-gray-700 dark:text-gray-400 leading-loose font-normal">
         Outside of programming, I find joy in hiking and playing football. They help me refresh my mind and give me the energy boost that I need to come back with new ideas and motivation.
       </p>
     </div>

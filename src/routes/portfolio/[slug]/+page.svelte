@@ -32,8 +32,8 @@
       .replace(/^### (.*$)/gim, '<h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">$1</h3>')
       .replace(/\*\*(.*)\*\*/gim, '<strong class="font-semibold">$1</strong>')
       .replace(/\*(.*)\*/gim, '<em class="italic">$1</em>')
-      .replace(/\n\n/gim, '</p><p class="mb-4 text-gray-600 dark:text-gray-400 leading-relaxed">')
-      .replace(/^(?!<h|<p)/gm, '<p class="mb-4 text-gray-600 dark:text-gray-400 leading-relaxed">')
+      .replace(/\n\n/gim, '</p><p class="mb-4 text-gray-600 dark:text-gray-300 leading-relaxed">')
+      .replace(/^(?!<h|<p)/gm, '<p class="mb-4 text-gray-600 dark:text-gray-300 leading-relaxed">')
       .replace(/$(?!<\/h|<\/p)/gm, '</p>');
   }
 </script>
@@ -120,13 +120,13 @@
       {#if markdownContent}
         {@html parseMarkdown(markdownContent)}
       {:else}
-        <p class="text-gray-600 dark:text-gray-400">Loading content...</p>
+        <p class="text-gray-600 dark:text-gray-100">Loading content...</p>
       {/if}
     </article>
   {:else}
     <!-- Project Not Found -->
     <div class="text-center py-16">
-      <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-200 mb-4">
         Project Not Found
       </h1>
       <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">
