@@ -19,6 +19,36 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "3",
+    title: "Retail Behaviour Analysis v1",
+    description:
+      "Sistem analisis perilaku pelanggan dari rekaman CCTV. Menggunakan computer vision dan multimodal transformer untuk memberikan strategi bisnis.",
+    image:
+      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/datathon_2025-1/retail-behaviour-1.jpg",
+    tags: ["Computer Vision", "TimeSformer", "LLM"],
+    category: "computer-vision",
+    demoUrl:
+      "https://huggingface.co/spaces/haipradana/retail-behavior-analysis",
+    githubUrl:
+      "https://github.com/haipradana/DATATHON-2025-Retail-Behaviour-Analysis",
+    year: 2025,
+    slug: "retail-behaviour-analysis-v1",
+  },
+  {
+    id: "2",
+    title: "Mood2Movie",
+    description:
+      "Generate movie recommendations based on your mood. Built with semantic search, sentiment analysis, and mood-based filtering.",
+    image:
+      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/mood2movie/mood2movie.jpg",
+    tags: ["Python", "LLM", "Transformers", "NLP"],
+    category: "llm",
+    demoUrl: "https://mood2movie.streamlit.app/",
+    githubUrl: "https://github.com/haipradana/Mood2Movie",
+    year: 2025,
+    slug: "mood2movie",
+  },
+  {
     id: "1",
     title: "ChatMyDocs",
     description:
@@ -32,77 +62,15 @@ export const projects: Project[] = [
     year: 2025,
     slug: "chatmydocs",
   },
-  {
-    id: "2",
-    title: "Object Detection System",
-    description:
-      "Real-time object detection using YOLO v8 for security and monitoring applications.",
-    image:
-      "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=600",
-    tags: ["Python", "YOLO", "OpenCV", "Flask"],
-    category: "computer-vision",
-    githubUrl: "https://github.com/username/object-detection",
-    year: 2024,
-    slug: "object-detection-system",
-  },
-  {
-    id: "3",
-    title: "E-Commerce Platform",
-    description:
-      "Full-stack e-commerce solution with modern UI/UX and payment gateway integration.",
-    image:
-      "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
-    tags: ["SvelteKit", "PostgreSQL", "Stripe", "Tailwind"],
-    category: "web-dev",
-    demoUrl: "https://ecommerce-demo.example.com",
-    githubUrl: "https://github.com/username/ecommerce",
-    year: 2023,
-    slug: "ecommerce-platform",
-  },
-  {
-    id: "4",
-    title: "Face Recognition Attendance",
-    description:
-      "Attendance system using face recognition with liveness detection.",
-    image:
-      "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=600",
-    tags: ["Python", "dlib", "PostgreSQL", "Streamlit"],
-    category: "computer-vision",
-    githubUrl: "https://github.com/username/face-attendance",
-    year: 2023,
-    slug: "face-recognition-attendance",
-  },
-  {
-    id: "5",
-    title: "Data Analytics Dashboard",
-    description:
-      "Interactive dashboard for business intelligence with real-time updates.",
-    image:
-      "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600",
-    tags: ["Python", "Plotly", "Pandas", "Streamlit"],
-    category: "data-science",
-    demoUrl: "https://analytics-demo.example.com",
-    githubUrl: "https://github.com/username/analytics-dashboard",
-    year: 2022,
-    slug: "data-analytics-dashboard",
-  },
-  {
-    id: "6",
-    title: "Mobile Task Manager",
-    description:
-      "Cross-platform mobile app for task management with offline sync.",
-    image:
-      "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600",
-    tags: ["React Native", "Firebase", "Redux", "TypeScript"],
-    category: "mobile",
-    githubUrl: "https://github.com/username/task-manager",
-    year: 2023,
-    slug: "mobile-task-manager",
-  },
 ];
 
 export const categories = [
   { id: "all", label: "All Projects", count: projects.length },
+  {
+    id: "data-science",
+    label: "Data Science",
+    count: projects.filter((p) => p.category === "data-science").length,
+  },
   {
     id: "llm",
     label: "LLM & AI",
@@ -118,14 +86,9 @@ export const categories = [
     label: "Web Development",
     count: projects.filter((p) => p.category === "web-dev").length,
   },
-  {
-    id: "data-science",
-    label: "Data Science",
-    count: projects.filter((p) => p.category === "data-science").length,
-  },
-  {
-    id: "mobile",
-    label: "Mobile Apps",
-    count: projects.filter((p) => p.category === "mobile").length,
-  },
+  // {
+  //   id: "mobile",
+  //   label: "Mobile Apps",
+  //   count: projects.filter((p) => p.category === "mobile").length,
+  // },
 ];
