@@ -22,3 +22,21 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Node modules
+node_modules/
+
+# Build output (SvelteKit, Vite, Sapper, dll)
+build/
+dist/
+.svelte-kit/
+.vercel/
+.netlify/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*
