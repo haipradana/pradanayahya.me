@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Home - Pradana Yahya</title>
+  <title>Pradana Yahya</title>
   <meta name="description" content="Personal website of Pradana Yahya Abdillah - Data Scientist, AI, and Tech Enthusiast" />
 </svelte:head>
 
@@ -68,7 +68,7 @@
     </div>
     
     <p class="text-gray-600 dark:text-gray-400 text-base lg:text-lg font-medium">
-      Data Science Enthusiast
+      Machine Learning & Data Science Enthusiast
     </p>
   </section>
 
