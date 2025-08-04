@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-  <title>Pradana Yahya</title>
-  <meta name="description" content="Personal website of Pradana Yahya Abdillah - Data Scientist, AI, and Tech Enthusiast" />
+  <title>Pradana Yahya Abdillah - Machine Learning & Data Science</title>
+  <meta name="description" content="This is my personal website. I'm a Machine Learning & Data Science Enthusiast. Passionate about AI, NLP, LLMs, and Computer Vision." />
 </svelte:head>
 
 <div class="max-w-4xl lg:max-w-5xl mx-auto px-7 lg:px-8 py-16 lg:py-20">
@@ -80,11 +80,11 @@
     
     <div class="space-y-6 lg:space-y-8">
       <p class="text-[14px] lg:text-base text-gray-900 dark:text-gray-300 leading-loose font-normal">
-        I am Pradana Yahya Abdillah, a bachelor student in Information Technology UGM.
+        I am Pradana Yahya Abdillah, a bachelor student in Information Technology UGM. This is my personal website.
       </p>
       
       <p class="text-[14px] lg:text-base text-gray-700 dark:text-gray-400 leading-loose font-normal">
-        Grow with a strong passion for everything in data-driven. I'm deeply interested by the world of machine learning, deep learning, and how we can extract meaningful insights from data. Lately, I've been actively exploring various area in AI, such as Natural Language Processing (NLP), Large Languae Models (LLMs), and Computer Vision. 
+        I'm deeply interested by the world of machine learning, deep learning, and how we can extract meaningful insights from data. Lately, I've been actively exploring various area in AI, such as Natural Language Processing (NLP), Large Languae Models (LLMs), and Computer Vision. 
       </p>
       
       <p class="text-[14px] lg:text-base text-gray-700 dark:text-gray-400 leading-loose font-normal">
