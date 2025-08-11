@@ -56,7 +56,7 @@ export const projects: Project[] = [
     description:
       "Fine-tuned RoBERTa sentiment-based model untuk klasifikasi hate speech pada teks bahasa Indonesia.",
     image:
-      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/hate_classification-roberta/hate_roberta.jpg",
+      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/hate_classification_roberta/hate_roberta.jpg",
     tags: ["NLP", "RoBERTa", "Fine-Tuning"],
     category: "nlp",
     demoUrl:
@@ -131,11 +131,6 @@ export const projects: Project[] = [
 export const categories = [
   { id: "all", label: "All Projects", count: projects.length },
   {
-    id: "data-science",
-    label: "Data Science",
-    count: projects.filter((p) => p.category === "data-science").length,
-  },
-  {
     id: "llm",
     label: "LLM & AI",
     count: projects.filter((p) => p.category === "llm").length,
@@ -146,13 +141,18 @@ export const categories = [
     count: projects.filter((p) => p.category === "computer-vision").length,
   },
   {
-    id: "web-dev",
-    label: "Web Development",
-    count: projects.filter((p) => p.category === "web-dev").length,
-  },
-  {
     id: "nlp",
     label: "NLP",
     count: projects.filter((p) => p.category === "nlp").length,
+  },
+  {
+    id: "data-science",
+    label: "Data Science",
+    count: projects.filter((p) => p.category === "data-science").length,
+  },
+  {
+    id: "web-dev",
+    label: "Web Development",
+    count: projects.filter((p) => p.category === "web-dev").length,
   },
 ];
