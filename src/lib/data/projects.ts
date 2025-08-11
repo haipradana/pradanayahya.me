@@ -7,9 +7,9 @@ export interface Project {
   category:
     | "llm"
     | "computer-vision"
-    | "web-dev"
-    | "mobile"
+    | "nlp"
     | "data-science"
+    | "web-dev"
     | "all";
   demoUrl?: string;
   githubUrl?: string;
@@ -18,6 +18,70 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: "7",
+    title: "Sentimen Analisis Abolisi Tom dan Hasto",
+    description:
+      "Sentimen analisis publik dan topic modeling pada keputusan Prabowo yang mengabulkan abolisi Tom dan amnesti Hasto.",
+    image:
+      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/abolisi_tom_hasto/tom2.jpg",
+    tags: ["NLP", "Sentiment Analysis", "BERTopic"],
+    category: "nlp",
+    demoUrl:
+      "https://x.com/haipradana/status/1951344945295663171?t=cn_0U9QgrNNQDYqveyJCYQ&s=19",
+    githubUrl:
+      "https://github.com/haipradana/barengdata/tree/main/Abolisi%20Tom%20Lembong",
+    year: 2025,
+    slug: "sentimen-analisis-abolisi-tom-dan-hasto",
+  },
+  {
+    id: "6",
+    title: "Sentimen Analisis Vonis Tom Lembong",
+    description:
+      "Sentimen analisis dan topic modeling pada vonis Tom Lembong, BERT untuk klasifikasi sentimen dan BertTopic untuk topic modeling.",
+    image:
+      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/vonis_tom_lembong/thumbnailTom1.jpg",
+    tags: ["NLP", "Sentiment Analysis", "BERTopic"],
+    category: "nlp",
+    demoUrl:
+      "https://www.instagram.com/p/DM72xWmPTen",
+    githubUrl:
+      "https://github.com/haipradana/barengdata/tree/main/Tom%20Lembong%201",
+    year: 2025,
+    slug: "sentimen-analisis-vonis-tom-lembong",
+  },
+  {
+    id: "5",
+    title: "Klasifikasi Hate Speech (RoBERTa)",
+    description:
+      "Fine-tuned RoBERTa sentiment-based model untuk klasifikasi hate speech pada teks bahasa Indonesia.",
+    image:
+      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/hate_classification-roberta/hate_roberta.jpg",
+    tags: ["NLP", "RoBERTa", "Fine-Tuning"],
+    category: "nlp",
+    demoUrl:
+      "https://huggingface.co/haipradana/roberta-hate-classification-model",
+    githubUrl:
+      "https://github.com/haipradana/RoBERTa-Indonesian-Hate-Tweet-Classification",
+    year: 2025,
+    slug: "hate-speech-roberta",
+  },
+  {
+    id: "4",
+    title: "Deteksi Sarkas (IndoBERT Fine-Tuning)",
+    description:
+      "Fine-tuned IndoBERT base untuk klasifikasi sarkas pada teks bahasa Indonesia, dengan dataset media sosial.",
+    image:
+      "https://raw.githubusercontent.com/haipradana/pradanayahya.me/refs/heads/main/static/images/projects/sarcasm_indobert_1/sarcasm_indobert.jpg",
+    tags: ["NLP", "IndoBERT", "Fine-Tuning"],
+    category: "nlp",
+    demoUrl:
+      "https://huggingface.co/haipradana/indobert-indonesia-satire-sarcastic-classification-model",
+    githubUrl:
+      "https://github.com/haipradana/indobert-indonesia-sarcastic-satire-classification",
+    year: 2025,
+    slug: "sarcasm-indobert",
+  },
   {
     id: "3",
     title: "Retail Behaviour Analysis v1",
@@ -86,9 +150,9 @@ export const categories = [
     label: "Web Development",
     count: projects.filter((p) => p.category === "web-dev").length,
   },
-  // {
-  //   id: "mobile",
-  //   label: "Mobile Apps",
-  //   count: projects.filter((p) => p.category === "mobile").length,
-  // },
+  {
+    id: "nlp",
+    label: "NLP",
+    count: projects.filter((p) => p.category === "nlp").length,
+  },
 ];
